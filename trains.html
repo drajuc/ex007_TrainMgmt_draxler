@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="trains.js"></script>
+</head>
+<body>
+<h1>List all Trains</h1>
+<button onclick="allTrains()">All Trains</button>
+<table id="allTrainsTable"></table>
+
+
+<h1>List of Stations</h1>
+<label for="tfListId">ID: </label>
+<input type="number" id="tfListId" name="tfListId">
+<button onclick="listStations(tfListId.value)">Stations</button>
+<table id="stationsTable"></table>
+
+
+<h1>Add Train</h1>
+<label for="tfAddId">ID: </label>
+<input type="number" id="tfAddId" name="tfAddId">
+<label for="tfType">Type: </label>
+<input type="text" id="tfType" name="tfType">
+<button onclick="addTrain(tfAddId.value,tfType.value)">Add Train</button>
+<table id="addTrainTable"></table>
+
+<h1>Add Station</h1>
+<label for="tfStationId">ID: </label>
+<input type="number" id="tfStationId" name="tfStationId">
+<label for="tfStation">Station: </label>
+<input type="text" id="tfStation" name="tfStation">
+<button onclick="addStation(tfStationId.value,tfStation.value)">Add Station</button>
+<table id="addStationTable"></table>
+
+</body>
+</html>
